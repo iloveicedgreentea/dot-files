@@ -60,32 +60,47 @@
         "!Sub sequence",
         "!ImportValue sequence"
     ],
-"editor.minimap.enabled": false,
-"terminal.integrated.rendererType": "dom",
-"files.associations": {
-    "*.k8s": "dockerfile"
-},
-"gitlens.advanced.telemetry.enabled": false,
-"scm.defaultViewMode": "tree",
-"yaml.validate": false,
-"terminal.external.osxExec": "iterm2.app",
-"terminal.integrated.fontSize": 13,
-"workbench.colorTheme": "One Dark Pro",
-"terraform.indexing": {
-    "enabled": false,
-    "liveIndexing": false,
-    "delay": 500,
-    "exclude": [
-        ".terraform/**/*",
-        "**/.terraform/**/*"
-    ]
-},
-"terraform.languageServer": {
-    "enabled": true,
-    "args": []
-},
-"terraform.telemetry.enabled": false,
-"terraform.lintPath": "/usr/local/bin/tflint",
-"oneDarkPro.vivid": true,
-"diffEditor.ignoreTrimWhitespace": false
+    "editor.minimap.enabled": false,
+    "terminal.integrated.rendererType": "dom",
+    "files.associations": {
+        "Dockerfile.*": "dockerfile"
+    },
+    "gitlens.advanced.telemetry.enabled": false,
+    "scm.defaultViewMode": "tree",
+    "go.autocompleteUnimportedPackages": true,
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "go.useLanguageServer": true,
+    "go.languageServerExperimentalFeatures": {
+        "autoComplete": true,
+        "documentSymbols": true,
+        "findReferences": true,
+        "format": true,
+        "goToDefinition": true,
+        "goToTypeDefinition": true,
+        "hover": true,
+        "signatureHelp": true,
+        "rename": true,
+        "workspaceSymbols": true,
+    },
+    "yaml.validate": false,
+    "terminal.external.osxExec": "iterm2.app",
+    "terminal.integrated.fontSize": 13,
+    "workbench.colorTheme": "One Dark Pro",
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": []
+    },
+    "terraform.telemetry.enabled": false,
+    "terraform.lintPath": "/usr/local/bin/tflint",
+    "oneDarkPro.vivid": true,
+    "diffEditor.ignoreTrimWhitespace": false
 }

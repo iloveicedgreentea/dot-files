@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+set -xe
 
 # Check if homebrew is installed
 if ! (command -v brew >/dev/null 2>&1); then
@@ -17,10 +17,12 @@ brew install fish
 echo "Installing OMF and bobthefish"
 curl -L https://get.oh-my.fish | fish
 omf install bobthefish
+mv ~/.config/fish/config.fish ~/.config/fish/config.fish.bak || true
+cp fish/config.fish ~/.config/fish/config.fish
 
 echo "Setting up VS Code"
 # Make symlink so you can run code
-ln -s "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code
+ln -s "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code || true
 
 brew install tflint
 
@@ -58,10 +60,10 @@ code --install-extension wix.vscode-import-cost
 code --install-extension zhuangtongfa.material-theme
 
 echo "Copying VS Code Settings"
-mv ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json.bak
+mv ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json.bak || true
 cp "vscode/settings.json" ~/Library/Application\ Support/Code/User/settings.json
 
 echo "Done"
 echo
 echo "Open iTerm2 and import this profile - ./iterm2/profile.json"
-echo "Please restart your terminal window after"
+echo "Please restart vscode and terminal window after"

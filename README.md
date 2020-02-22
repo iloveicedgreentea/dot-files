@@ -2,12 +2,17 @@
 
 This repo contains the dot files for my Mac workflow: fish, iTerm2, and others
 
+## Usage
+Run setup.sh, then add the iterm2 profile. Restart everything and you should be good to go. 
+
+I made sure to backup important files in case you want to keep them but make sure to backup your dotfiles anyway.
+
 ## Setup.sh
 This will install:
 * firacode
 * homebrew
 * fish + OMF + bobthefish
-* VS Code extensions
+* VS Code extensions + tweaked config + cli support
 
 ## Font
 I use Firacode-retina with ligatures enabled
