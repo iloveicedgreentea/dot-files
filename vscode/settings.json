@@ -1,0 +1,91 @@
+{
+    "files.autoSave": "afterDelay",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "editor.insertSpaces": true,
+    "git.autofetch": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
+    "materialTheme.fixIconsRunning": false,
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "FiraCode-Retina",
+    "explorer.confirmDragAndDrop": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7",
+    "breadcrumbs.enabled": true,
+    "markdown.preview.breaks": true,
+    "explorer.openEditors.visible": 0,
+    "terminal.integrated.experimentalBufferImpl": "TypedArray",
+    "explorer.confirmDelete": false,
+    "[ruby]": {
+    
+    },
+    "yaml.customTags": [
+        "!Base64 mapping",
+        "!Cidr sequence",
+        "!FindInMap sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Join sequence",
+        "!Ref",
+        "!Or sequence",
+        "!If sequence",
+        "!Select sequence",
+        "!Split sequence",
+        "!Sub",
+        "!Transform mapping",
+        "!Not sequence",
+        "!Equals sequence",
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap",
+        "!Base64",
+        "!Cidr",
+        "!Select",
+        "!Split",
+        "!Join",
+        "!And sequence",
+        "!Sub sequence",
+        "!ImportValue sequence"
+    ],
+"editor.minimap.enabled": false,
+"terminal.integrated.rendererType": "dom",
+"files.associations": {
+    "*.k8s": "dockerfile"
+},
+"gitlens.advanced.telemetry.enabled": false,
+"scm.defaultViewMode": "tree",
+"yaml.validate": false,
+"terminal.external.osxExec": "iterm2.app",
+"terminal.integrated.fontSize": 13,
+"workbench.colorTheme": "One Dark Pro",
+"terraform.indexing": {
+    "enabled": false,
+    "liveIndexing": false,
+    "delay": 500,
+    "exclude": [
+        ".terraform/**/*",
+        "**/.terraform/**/*"
+    ]
+},
+"terraform.languageServer": {
+    "enabled": true,
+    "args": []
+},
+"terraform.telemetry.enabled": false,
+"terraform.lintPath": "/usr/local/bin/tflint",
+"oneDarkPro.vivid": true,
+"diffEditor.ignoreTrimWhitespace": false
+}
