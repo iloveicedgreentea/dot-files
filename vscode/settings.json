@@ -9,6 +9,9 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
+    "files.associations": {
+        "Dockerfile.*": "dockerfile"
+    },
     "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": 0,
     "materialTheme.fixIconsRunning": false,
@@ -62,26 +65,11 @@
     ],
     "editor.minimap.enabled": false,
     "terminal.integrated.rendererType": "dom",
-    "files.associations": {
-        "Dockerfile.*": "dockerfile"
-    },
     "gitlens.advanced.telemetry.enabled": false,
     "scm.defaultViewMode": "tree",
     "go.autocompleteUnimportedPackages": true,
     "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
     "go.useLanguageServer": true,
-    "go.languageServerExperimentalFeatures": {
-        "autoComplete": true,
-        "documentSymbols": true,
-        "findReferences": true,
-        "format": true,
-        "goToDefinition": true,
-        "goToTypeDefinition": true,
-        "hover": true,
-        "signatureHelp": true,
-        "rename": true,
-        "workspaceSymbols": true,
-    },
     "yaml.validate": false,
     "terminal.external.osxExec": "iterm2.app",
     "terminal.integrated.fontSize": 13,
