@@ -79,5 +79,6 @@ function help
   echo
 end
 
-# Uncheck if you want to use starship when fish starts. Personally, not a fan.
+# Uncomment if you want to use starship when fish starts. Personally, not a fan as it's pretty slow compared to using fish alone
+#brew install starship
 #starship init fish | source
