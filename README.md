@@ -21,7 +21,7 @@ I use Firacode-retina with ligatures enabled
 The custom profile uses the `Brogrammer` theme with some helpful tweaks enabled
 
 ## Fish
-The setup script will install OMF and bobthefish theme. I also have some aliases for faster CLI use
+The setup script will install OMF and bobthefish theme. I also have some alias shortcuts to use various tools faster, like `kc` instead of `kubectl`
 
 ## VS Code
 The config has tweaks for things like Terraform and other plugins. The setup script will install a bunch of extensions.
