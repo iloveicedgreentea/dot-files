@@ -1,5 +1,4 @@
 #!/bin/bash
-set -xe
 
 # Check if homebrew is installed
 if ! (command -v brew >/dev/null 2>&1); then
@@ -14,11 +13,10 @@ brew cask install font-fira-code
 echo "Installing fish"
 brew install fish
 
-echo "Installing OMF and bobthefish"
-curl -L https://get.oh-my.fish | fish
-omf install bobthefish
-mv ~/.config/fish/config.fish ~/.config/fish/config.fish.bak || true
-cp fish/config.fish ~/.config/fish/config.fish
+echo "Installing shellcheck"
+brew install shellcheck
+
+
 
 echo "Setting up VS Code"
 # Make symlink so you can run code
@@ -52,7 +50,6 @@ code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.Go
 code --install-extension PKief.material-icon-theme
 code --install-extension seansassenrath.vscode-theme-superonedark
-code --install-extension shinnn.stylelint
 code --install-extension spywhere.guides
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension timonwong.shellcheck
@@ -62,6 +59,12 @@ code --install-extension zhuangtongfa.material-theme
 echo "Copying VS Code Settings"
 mv ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json.bak || true
 cp "vscode/settings.json" ~/Library/Application\ Support/Code/User/settings.json
+
+echo "Installing OMF and bobthefish"
+curl -L https://get.oh-my.fish | fish
+omf install bobthefish
+mv ~/.config/fish/config.fish ~/.config/fish/config.fish.bak || true
+cp fish/config.fish ~/.config/fish/config.fish
 
 echo "Done"
 echo
