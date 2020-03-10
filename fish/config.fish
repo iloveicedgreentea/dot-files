@@ -1,6 +1,9 @@
 # Quick file editing when needed
 export EDITOR='vim'
 
+# Set PATH
+set PATH /usr/local/bin/ $PATH
+
 # Configs for bobthefish
 set -g fish_prompt_pwd_dir_length 10
 set -g theme_display_k8s_context no
@@ -10,8 +13,9 @@ set -g theme_color_scheme dark
 
 # Aliases
 
-# Set a context
-alias XYZ="source /Users/XYZ/some_context/env.sh"
+# Example - Set a context for multiple clients
+#alias XYZ="source /Users/XYZ/some_context/env.sh"
+#alias 123="source /Users/123/some_context/env.sh"
 
 # Commands
 alias kc='kubectl'
@@ -63,6 +67,7 @@ function help
   echo 'kcdp $1 - describe deploy'
   echo 'kcgd $1 - get deploy'
   echo 'kcdd $1 - describe deploy'
+  echo 'kcdn $1 - describe node'
   echo
   echo "Git"
   echo "---------"
