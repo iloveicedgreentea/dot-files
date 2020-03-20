@@ -22,7 +22,7 @@ echo "Setting up VS Code"
 # Make symlink so you can run code
 ln -s "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code || true
 
-brew install tflint
+brew install tflint terraform
 
 code --install-extension aaron-bond.better-comments
 code --install-extension akamud.vscode-theme-onedark
@@ -43,6 +43,7 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension joelday.docthis
 code --install-extension leizongmin.node-module-intellisense
 code --install-extension mauve.terraform
+code --install-extension run-at-scale.terraform-doc-snippets
 code --install-extension mikestead.dotenv
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.python
@@ -60,11 +61,17 @@ echo "Copying VS Code Settings"
 mv ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json.bak || true
 cp "vscode/settings.json" ~/Library/Application\ Support/Code/User/settings.json
 
+# Fix TF linter
+cd /Users/ilan/.vscode/extensions/mauve.terraform-1.4.0/lspbin && terraform init
+
 echo "Installing OMF and bobthefish"
 curl -L https://get.oh-my.fish | fish
 omf install bobthefish
 mv ~/.config/fish/config.fish ~/.config/fish/config.fish.bak || true
 cp fish/config.fish ~/.config/fish/config.fish
+
+echo "Installing Python3"
+brew install python3
 
 echo "Done"
 echo
