@@ -17,7 +17,6 @@ echo "Installing shellcheck"
 brew install shellcheck
 
 
-
 echo "Setting up VS Code"
 # Make symlink so you can run code
 ln -s "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code || true
@@ -74,6 +73,15 @@ cp fish/config.fish ~/.config/fish/config.fish
 
 echo "Installing Python3"
 brew install python3
+
+echo "Installing gcloud"
+curl https://sdk.cloud.google.com > install.sh
+bash install.sh --disable-prompts
+rm install.sh
+echo "source '$HOME/google-cloud-sdk/path.fish.inc'" >> $HOME/.config/fish/config.fish
+
+echo "Installing gcloud completions for fish
+omf install git@github.com:aliz-ai/google-cloud-sdk-fish-completion.git  
 
 echo "Done"
 echo
